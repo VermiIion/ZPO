@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 
 public class PeselValidator {
-    public static boolean validatePesel(String pesel) throws NullPointerException{
+    public static boolean validatePesel(String pesel) throws NullPointerException, IndexOutOfBoundsException{
         try{
             isValidFormat(pesel);
             getBirthDate(pesel);
@@ -25,14 +25,12 @@ public class PeselValidator {
 
     }
 
-    public static String getBirthDate(String pesel) throws NullPointerException, IndexOutOfBoundsException {
+    public static String getBirthDate(String pesel) throws NullPointerException, IndexOutOfBoundsException, IllegalArgumentException {
         String year = pesel.substring(0, 2);
         String month = pesel.substring(2, 4);
         String day = pesel.substring(4, 6);
-
         String fullYear = getFullYear(year);
         String fullMonth = getFullMonth(month);
-
         return day + "-" + fullMonth + "-" + fullYear;
     }
 
@@ -47,8 +45,9 @@ public class PeselValidator {
 
     private static String getFullMonth(String month) {
         int prefix = Integer.parseInt(month);
+
         if (prefix >= 1 && prefix <= 12) {
-            return (prefix < 10) ? "0" + month : month;
+            return (prefix < 10) ? "0" + prefix : String.valueOf(prefix);
         } else {
             throw new IllegalArgumentException("Invalid month prefix in PESEL");
         }

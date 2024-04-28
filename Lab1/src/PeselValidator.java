@@ -3,7 +3,7 @@ import java.util.regex.Pattern;
 
 
 public class PeselValidator {
-    public static boolean validatePesel(String pesel) throws NullPointerException, IndexOutOfBoundsException{
+    public static boolean validatePesel(String pesel) throws NullPointerException, IndexOutOfBoundsException, NumberFormatException{
         try{
             isValidFormat(pesel);
             getBirthDate(pesel);
@@ -34,7 +34,7 @@ public class PeselValidator {
         return day + "-" + fullMonth + "-" + fullYear;
     }
 
-    private static String getFullYear(String year) {
+    private static String getFullYear(String year) throws NumberFormatException, NullPointerException, IndexOutOfBoundsException {
         int prefix = Integer.parseInt(year);
         if (prefix >= 0 && prefix <= 99) {
             return prefix <= 19 ? "20" + year : "19" + year;
@@ -43,7 +43,7 @@ public class PeselValidator {
         }
     }
 
-    private static String getFullMonth(String month) {
+    private static String getFullMonth(String month) throws NumberFormatException, NullPointerException, IndexOutOfBoundsException{
         int prefix = Integer.parseInt(month);
 
         if (prefix >= 1 && prefix <= 12) {

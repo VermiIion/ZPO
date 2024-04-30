@@ -1,0 +1,7 @@
+pesel,gender,birth_date,valid
+90010112345,K,01-01-1990,true
+82030498765,M,04-03-1982,true
+75063087654,K,30-06-1975,true
+89021234567,M,12-02-1989,true
+12345678901,K,invalid,false
+920220123,K,invalid,false

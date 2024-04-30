@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dd1d610-5b5e-494b-9d0a-16f57a4d7fa9" name="Changes" comment="lab1 wip">
+      <change afterPath="$PROJECT_DIR$/Lab1/tests.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/Lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Lab1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/PeselValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/PeselValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Adam &lt;adam@&gt;" />
+        <option value="VermiIion &lt;misterpig231@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
@@ -64,7 +68,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -152,7 +156,9 @@
       <workItem from="1713965965026" duration="2396000" />
       <workItem from="1714328585489" duration="14000" />
       <workItem from="1714328604603" duration="889000" />
-      <workItem from="1714329504054" duration="52000" />
+      <workItem from="1714329504054" duration="790000" />
+      <workItem from="1714414133833" duration="642000" />
+      <workItem from="1714498121119" duration="1827000" />
     </task>
     <task id="LOCAL-00001" summary="lab1 wip">
       <option name="closed" value="true" />
@@ -162,11 +168,30 @@
       <option name="project" value="LOCAL" />
       <updated>1713628860563</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lab1 wip">
+      <option name="closed" value="true" />
+      <created>1714329825693</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714329825693</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lab1 wip" />

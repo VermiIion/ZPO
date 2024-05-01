@@ -1,0 +1,7 @@
+pesel,gender,birth_date,valid,checksum
+90010112349,K,01-01-1990,true,9
+82030498767,K,04-03-1982,true,7
+75063087651,M,30-06-1975,true,1
+89021234560,K,12-02-1989,true,0
+12345678901,K,invalid,false,1
+920220123,K,invalid,false,3

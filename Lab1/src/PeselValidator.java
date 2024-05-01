@@ -5,14 +5,13 @@ import java.util.regex.Pattern;
 public class PeselValidator {
     public static boolean validatePesel(String pesel) throws NullPointerException, IndexOutOfBoundsException, NumberFormatException{
         try{
-            isValidFormat(pesel);
             getBirthDate(pesel);
             getGender(pesel);
-        }catch(NullPointerException e) {
+        return (isValidFormat(pesel) && calculateChecksum(pesel) == Integer.parseInt(String.valueOf(pesel.charAt(pesel.length() - 1))));
+        }catch(Exception e) {
             System.out.println("PESEL not valid");
             return false;
         }
-        return true;
     }
 
     public static String getGender(String pesel) {
@@ -52,4 +51,23 @@ public class PeselValidator {
             throw new IllegalArgumentException("Invalid month prefix in PESEL");
         }
     }
+
+    public static int calculateChecksum(String pesel) throws IllegalArgumentException {
+        if (!isValidFormat(pesel)) {
+            throw new IllegalArgumentException("Invalid PESEL format");
+        }
+
+        int[] weights = {1, 3, 7, 9, 1, 3, 7, 9, 1, 3};
+        int sum = 0;
+        for (int i = 0; i < 10; i++) {
+            sum += Character.getNumericValue(pesel.charAt(i)) * weights[i];
+        }
+        int checksum;
+        if(sum > 10) {
+            checksum = 10 - (sum % 10);
+        }
+        else checksum = 10 - sum;
+        return checksum == 10 ? 0 : checksum;
+    }
+
 }

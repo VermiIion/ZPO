@@ -24,7 +24,7 @@ public class MisraGriesAlgorithm {
             e.printStackTrace();
         }
 
-        int n = totalWords;  // Liczba wszystkich przetworzonych słów
+        int n = totalWords;
 
         D2.entrySet().stream()
                 .filter(entry -> entry.getValue() > n / k)

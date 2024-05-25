@@ -8,7 +8,7 @@ public class WordFrequencyCounter {
 
     public static void main(String[] args) {
 
-        String[] words = readAndProcessWordsFromFile("english.200MB.txt");
+        String[] words = readAndProcessWordsFromFile("english.txt");
 
         int k = 10;
         Map<String, Integer> wordFrequency = new HashMap<>();
@@ -25,7 +25,7 @@ public class WordFrequencyCounter {
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = br.readLine()) != null) {
-                String[] words = line.replaceAll("[^a-zA-Z ]", " ") i
+                String[] words = line.replaceAll("[^a-zA-Z ]", " ")
                         .toLowerCase()
                         .split("\\s+");
                 for (String word : words) {

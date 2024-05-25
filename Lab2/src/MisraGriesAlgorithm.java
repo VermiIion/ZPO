@@ -14,7 +14,7 @@ public class MisraGriesAlgorithm {
         Map<String, Integer> D2 = new HashMap<>();
 
         // Pobierz plik i przetwórz go słowo po słowie
-        String fileName = "english.200MB.txt";
+        String fileName = "/english.txt";
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = br.readLine()) != null) {

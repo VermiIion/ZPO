@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class FileReaderExample {
     public static void main(String[] args) {
-        String fileName = "english.200MB.txt";
+        String fileName = "english.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;

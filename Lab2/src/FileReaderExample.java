@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class FileReaderExample {
     public static void main(String[] args) {
-        String fileName = "english.txt";
+        String fileName = "english200MB";
 
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
@@ -14,8 +14,6 @@ public class FileReaderExample {
                         .split("\\s+");               // Podziel na słowa
                 for (String word : words) {
                     if (word.length() >= 3) {
-                        // Przetwarzaj słowa o długości co najmniej 3 litery
-                        // tutaj możesz dodać kod do dalszej analizy lub przetwarzania
                     }
                 }
             }

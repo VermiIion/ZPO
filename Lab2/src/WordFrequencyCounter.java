@@ -8,7 +8,7 @@ public class WordFrequencyCounter {
 
     public static void main(String[] args) {
 
-        String[] words = readAndProcessWordsFromFile("english.txt");
+        String[] words = readAndProcessWordsFromFile("english200MB");
 
         int k = 10;
         Map<String, Integer> wordFrequency = new HashMap<>();

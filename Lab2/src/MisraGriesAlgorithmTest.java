@@ -30,7 +30,7 @@ public class MisraGriesAlgorithmTest {
     public void testProcessLine() {
         Map<String, Integer> D1 = new HashMap<>();
         Map<String, Integer> D2 = new HashMap<>();
-        String line = "This is a sample line with multiple Words, including punctuation!";
+        String line = "Ten tekst ma w sobie 8 wyrazow, ktore sa dluzsze lub rowne 3";
 
         MisraGriesAlgorithm.processLine(line, D1, D2, 100);
 

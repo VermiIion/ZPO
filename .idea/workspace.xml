@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dd1d610-5b5e-494b-9d0a-16f57a4d7fa9" name="Changes" comment="lab1 wip">
+    <list default="true" id="1dd1d610-5b5e-494b-9d0a-16f57a4d7fa9" name="Changes" comment="lab2 wip">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/Lab3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/src/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/src/CalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/src/DefaultStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/src/JustAClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/src/StudentEquals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab3/src/StudentToString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/tests.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/src/FileReaderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/FileReaderExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/src/MisraGriesAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/MisraGriesAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/src/WordFrequencyCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/WordFrequencyCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -45,47 +52,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.MisraGriesAlgorithm.executor": "Run",
-    "Application.WordFrequencyCounter.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "true",
-    "JUnit.PeselValidatorTest.calculateChecksum.executor": "Run",
-    "JUnit.PeselValidatorTest.executor": "Run",
-    "JUnit.PeselValidatorTest.getBirthDate.executor": "Run",
-    "JUnit.PeselValidatorTest.getGender.executor": "Run",
-    "JUnit.PeselValidatorTest.isValidFormat.executor": "Run",
-    "JUnit.PeselValidatorTest.validatePesel.executor": "Run",
-    "JUnit.PeselValidatorTest.validatePeselFromFile.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MisraGriesAlgorithm.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WordFrequencyCounter.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;JUnit.PeselValidatorTest.calculateChecksum.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PeselValidatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PeselValidatorTest.getBirthDate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PeselValidatorTest.getGender.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PeselValidatorTest.isValidFormat.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PeselValidatorTest.validatePesel.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PeselValidatorTest.validatePeselFromFile.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Adam\IdeaProjects\ZPO\Lab2" />
       <recent name="C:\Users\Adam\IdeaProjects\ZPO\Lab2\src" />
+      <recent name="C:\Users\Adam\IdeaProjects\ZPO\Lab2" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
@@ -168,6 +175,8 @@
       <workItem from="1714414133833" duration="642000" />
       <workItem from="1714498121119" duration="1838000" />
       <workItem from="1714549366201" duration="6835000" />
+      <workItem from="1716655794591" duration="1670000" />
+      <workItem from="1716662670696" duration="3234000" />
     </task>
     <task id="LOCAL-00001" summary="lab1 wip">
       <option name="closed" value="true" />
@@ -193,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714501762593</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lab2 wip">
+      <option name="closed" value="true" />
+      <created>1716625184147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716625184147</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +229,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lab1 wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab1 wip" />
+    <MESSAGE value="lab2 wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab2 wip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

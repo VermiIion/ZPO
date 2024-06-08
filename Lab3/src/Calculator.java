@@ -44,7 +44,7 @@ public class Calculator {
         }
     }
 
-    public static double processInput(String input) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+    public static double processInput(String input) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, ArithmeticException {
         String[] tokens = input.split(" ");
         if (tokens.length == 2) {
             String operation = tokens[0];

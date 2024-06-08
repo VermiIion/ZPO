@@ -4,6 +4,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.annotation.ElementType;
 import java.util.List;
+import java.util.Objects;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
@@ -34,7 +35,7 @@ public class StudentEquals {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Student student = (Student) o;
+        StudentEquals student = (StudentEquals) o;
 
         for (Field field : this.getClass().getDeclaredFields()) {
             if (field.isAnnotationPresent(IgnoreEquals.class)) continue;
@@ -42,7 +43,7 @@ public class StudentEquals {
             try {
                 Object thisValue = field.get(this);
                 Object otherValue = field.get(student);
-                if (thisValue != null ? !thisValue.equals(otherValue) : otherValue != null) return false;
+                if (!Objects.equals(thisValue, otherValue)) return false;
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             }
@@ -54,6 +55,6 @@ public class StudentEquals {
     public static void main(String[] args) {
         StudentEquals student1 = new StudentEquals("Jan", "Kowalski", 123, List.of(3.0f, 4.0f));
         StudentEquals student2 = new StudentEquals("Jan", "Kowalski", 456, List.of(3.5f, 5.0f));
-        System.out.println(student1.equals(student2)); // true
+        System.out.println(student1.equals(student2));
     }
 }

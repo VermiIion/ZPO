@@ -3,6 +3,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.annotation.ElementType;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -46,7 +48,26 @@ public class StudentToString {
             return Integer.MAX_VALUE;
         }));
 
-        for (Field field : fields) {
+        Field[] superFields = this.getClass().getSuperclass().getDeclaredFields();
+        Arrays.sort(superFields, Comparator.comparingInt(f -> {
+            if (f.isAnnotationPresent(DisplayAnno.class)) {
+                return f.getAnnotation(DisplayAnno.class).order();
+            }
+            return Integer.MAX_VALUE;
+        }));
+
+        buildString(sb, superFields);
+
+        buildString(sb, fields);
+
+        if (!sb.isEmpty()) {
+            sb.setLength(sb.length() - 2);
+        }
+        return sb.toString();
+    }
+
+    private void buildString(StringBuilder sb, Field[] superFields) {
+        for (Field field : superFields) {
             if (field.isAnnotationPresent(DisplayAnno.class)) {
                 DisplayAnno annotation = field.getAnnotation(DisplayAnno.class);
                 field.setAccessible(true);
@@ -60,15 +81,26 @@ public class StudentToString {
                 }
             }
         }
-
-        if (!sb.isEmpty()) {
-            sb.setLength(sb.length() - 2); // remove trailing ", "
-        }
-        return sb.toString();
     }
 
     public static void main(String[] args) {
         StudentToString student = new StudentToString("Jan", "Kowalski", 123456, Arrays.asList(3.0f, 4.0f, 5.0f));
         System.out.println(student);
+    }
+
+    public int getIndeks() {
+        return indeks;
+    }
+
+    public List<Float> getOceny() {
+        return oceny;
+    }
+
+    public String getImie() {
+        return imie;
+    }
+
+    public String getNazwisko() {
+        return nazwisko;
     }
 }
